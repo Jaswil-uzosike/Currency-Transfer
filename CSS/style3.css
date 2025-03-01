@@ -1,0 +1,136 @@
+.site-footer {
+    background-color: #aeb6d4;
+    color: #6a5454;
+    padding: 40px 0;
+    font-size: 15px;
+    line-height: 20px;
+}
+
+.footer-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    width: 33.3333%;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li a {
+    color: #131313;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links li a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #fff;
+}
+
+.footer-bottom-row {
+    text-align: center;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center children horizontally in the column */
+  gap: 15px;
+  margin: 0 auto; /* Center .cards block itself horizontally if it's a block-level element */
+  min-height: 10vh; /* Make .cards at least as tall as the viewport */
+  justify-content: flex-start; /* Align items to the start of the container */
+}
+
+/* ... other styles remain unchanged ... */
+
+/* If you want to specifically target the first card for a margin-top adjustment: */
+.cards .card:first-child {
+  margin-top: 2px; /* Or whatever value you prefer */
+}
+  
+  .cards .red {
+    background-color: #f43f5e;
+  }
+  
+  .cards .blue {
+    background-color: #3b82f6;
+  }
+  
+  .cards .green {
+    background-color: #22c55e;
+  }
+  
+  .cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 100px;
+    width: 250px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+  }
+  
+  .cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+  }
+  
+  .cards .card p.second-text {
+    font-size: .7em;
+  }
+  
+  .cards .card:hover {
+    transform: scale(1.1, 1.1);
+  }
+  
+  .cards:hover > .card:not(:hover) {
+    transform: scale(0.9, 0.9);
+  }
+  
